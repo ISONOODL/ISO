@@ -1,0 +1,29 @@
+import shutil
+import time
+
+
+confirmation = input("do you wish to self destruct, y or n")
+
+
+def shutdown():
+    shutil.rmtree('N:\My Documents\deletethis')
+
+if confirmation == 'y':
+    print("5")
+    time.sleep(1)
+    print("4")
+    time.sleep(1)
+    print("3")
+    time.sleep(1)
+    print("2")
+    time.sleep(1)
+    print("1")
+    time.sleep(1)
+    shutdown()
+
+
+elif confirmation != 'y':
+    shutdown()
+
+
+
