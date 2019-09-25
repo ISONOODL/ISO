@@ -1,0 +1,3 @@
+import shutil
+
+shutil.rmtree('\\cspupil01\2018\TAYLMI2018\My Documents\testtest')
