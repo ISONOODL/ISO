@@ -1,0 +1,71 @@
+import os
+import shutil
+import sys
+import time
+import random
+import subprocess
+
+
+listvalid = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+confirm = int(input("1. Shutdown, 2. Logoff, 3. Sonnysfun - abort  "))
+
+if confirm == 1:
+    check = input("Want to shutdown your computer? - enter 'shutdown' to continue")
+    if check == 'shutdown':
+        num1 = random.choice(listvalid)
+        num2 = random.choice(listvalid)
+        num3 = random.choice(listvalid)
+        num4 = random.choice(listvalid)
+        num5 = random.choice(listvalid)
+        num6 = random.choice(listvalid)
+        doublecheck = (num1+num2+num3+num4+num5+num6)
+        print(doublecheck)
+        doublecheckinput = input("Input the above number to continue")
+        if doublecheckinput == doublecheck:
+            os.system("shutdown /s /t 1")
+        else:
+            exit()
+    else:
+        exit()
+
+elif confirm == 2:
+    check = input("Want to logoff your computer? - enter 'logoff' to continue ")
+    if check == 'logoff':
+        num1 = random.choice(listvalid)
+        num2 = random.choice(listvalid)
+        num3 = random.choice(listvalid)
+        num4 = random.choice(listvalid)
+        num5 = random.choice(listvalid)
+        num6 = random.choice(listvalid)
+        doublecheck = (num1+num2+num3+num4+num5+num6)
+        print(doublecheck)
+        doublecheckinput = input("Input the above number to continue")
+        if doublecheckinput == doublecheck:
+            os.system("shutdown -1")
+        else:
+            exit()
+    else:
+        exit()
+
+elif confirm == 3:
+    check = input("Want to abort? - enter 'abort' to continue")
+    if check == 'abort':
+        num1 = random.choice(listvalid)
+        num2 = random.choice(listvalid)
+        num3 = random.choice(listvalid)
+        num4 = random.choice(listvalid)
+        num5 = random.choice(listvalid)
+        num6 = random.choice(listvalid)
+        doublecheck = (num1+num2+num3+num4+num5+num6)
+        print(doublecheck)
+        doublecheckinput = input("Input the above number to continue")
+        if doublecheckinput == doublecheck:
+            shutil.rmtree("N:\My Documents\Computer Science\sonnys presents")
+        else:
+            exit()
+    else:
+        exit()
+      
+else:
+    exit()
